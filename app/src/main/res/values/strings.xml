@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="signup">Register</string>
+    <string name="login">Login</string>
+    <string name="message_welcome_page">Here you can tell stories about anything, and can see other peoples stories too. Have a good time</string>
+    <string name="title_welcome_page">Welcome to the Story App!</string>
+    <string name="title_signup_page">Fill in your data here</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Come on in now</string>
+    <string name="title_login_page">Ready to explore?</string>
+    <string name="name">Name</string>
+    <string name="fail_login">Invalid credential</string>
+    <string name="fail_signup">Failed to register, please try again!</string>
+    <string name="err_empty_email">Fill the Email Field</string>
+    <string name="err_invalid_email">Invalid Email</string>
+    <string name="photo_name">Photo Author</string>
+    <string name="description">Photo Description here</string>
+    <string name="desc_photo_item">This is a photo on the list item story</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_logout">Logout</string>
+    <string name="empty_data">No stories for now</string>
+    <string name="camera">Camera</string>
+    <string name="upload">Upload</string>
+    <string name="gallery">gallery</string>
+    <string name="logging_in">Logging in....</string>
+    <string name="registering">Registering....</string>
+    <string name="loading_data">Loading....</string>
+    <string name="error_load">Failed to load data</string>
+    <string name="desc_post_img">Enter a description for this photo</string>
+    <string name="add_image_warning">Please add image first</string>
+    <string name="desc_switch_camera">this is the switch camera icon</string>
+    <string name="desc_capture">this is icon capture</string>
+    <string name="failed_take_pic">Failed to take picture</string>
+    <string name="fail_camera">Failed to show camera</string>
+    <string name="date">Uploaded on %1$s</string>
+    <string name="desc_img_detail">this is the detail image</string>
+    <string name="desc_landing_page_img">This is a welcome image</string>
+    <string name="desc_img_login">This is the image on login</string>
+    <string name="desc_button_post">This is the button to add story</string>
+    <string name="desc_template_img_post">this is the image template on the story post</string>
+    <string name="desc_img_reg">This is a picture on registration</string>
+    <string name="no_location_selected">No location selected</string>
+    <string name="maps_lat_lon_format" translatable="false">Lat: %1$.2f Lon: %2$.2f</string>
+    <string name="location">Location</string>
+    <string name="change">Change</string>
+    <string name="maps_save">Save</string>
+    <string name="retry_data">Failed to load, try again</string>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.intermediate_submissionfinal_robbyramadhan.fragment.LandingPageFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing_page">
+        <action
+            android:id="@+id/action_landingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.intermediate_submissionfinal_robbyramadhan.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_storyFragment"
+            app:destination="@id/storyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.intermediate_submissionfinal_robbyramadhan.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/storyFragment"
+        android:name="com.example.intermediate_submissionfinal_robbyramadhan.fragment.StoryFragment"
+        android:label="StoryFragment"
+        tools:layout="@layout/fragment_story">
+        <argument
+            android:name="token"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_storyFragment_to_storyDetailFragment"
+            app:destination="@+id/storyDetailFragment" />
+        <action
+            android:id="@+id/action_storyFragment_to_storyWithMapsFragment"
+            app:destination="@+id/storyWithMapsFragment" />
+        <action
+            android:id="@+id/action_storyFragment_to_postStoryFragment"
+            app:destination="@+id/postStoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/storyDetailFragment"
+        android:name="com.example.intermediate_submissionfinal_robbyramadhan.fragment.StoryDetailFragment"
+        android:label="StoryDetailFragment"
+        tools:layout="@layout/fragment_story_detail">
+        <argument
+            android:name="story"
+            app:argType="com.example.intermediate_submissionfinal_robbyramadhan.model.StoryModel" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/storyWithMapsFragment"
+        android:name="com.example.intermediate_submissionfinal_robbyramadhan.fragment.StoryWithMapsFragment"
+        android:label="FragmentStoryWithMaps"
+        tools:layout="@layout/fragment_story_with_maps">
+        <argument
+            android:name="action"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/postStoryFragment"
+        android:name="com.example.intermediate_submissionfinal_robbyramadhan.fragment.PostStoryFragment"
+        android:label="PostStoryFragment"
+        tools:layout="@layout/fragment_post_story">
+        <argument
+            android:name="token"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_postStoryFragment_to_storyWithMapsFragment"
+            app:destination="@+id/storyWithMapsFragment" />
+    </fragment>
+
+</navigation>
